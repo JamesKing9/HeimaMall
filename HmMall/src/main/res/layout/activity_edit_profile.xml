@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_titlebar"/>
+
+    <LinearLayout
+        android:id="@+id/ll_avatar"
+        style="@style/EditProfileLayout">
+
+        <TextView
+            android:text="头像"
+            style="@style/EditProfileTitle" />
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:src="@mipmap/avatar_default"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/me_item_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/ll_nickname"
+        style="@style/EditProfileLayout">
+
+        <TextView
+            android:text="昵称"
+            style="@style/EditProfileTitle" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:textColor="@color/secondary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/me_item_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/ll_gender"
+        style="@style/EditProfileLayout">
+
+        <TextView
+            android:text="性别"
+            style="@style/EditProfileTitle" />
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:textColor="@color/secondary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/me_item_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_birthday"
+        style="@style/EditProfileLayout">
+
+        <TextView
+            android:text="出生日期"
+            style="@style/EditProfileTitle" />
+
+        <TextView
+            android:id="@+id/tv_birthday"
+            android:textColor="@color/secondary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/me_item_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>

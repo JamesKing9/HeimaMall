@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion ANDROID_BUILD_SDK_VERSION as int
+    buildToolsVersion ANDROID_BUILD_TOOLS_VERSION
+
+    defaultConfig {
+        applicationId "com.itheima.heimamall"
+        minSdkVersion ANDROID_BUILD_MIN_SDK_VERSION as int
+        targetSdkVersion ANDROID_BUILD_TARGET_SDK_VERSION as int
+        versionCode VERSION_CODE as int
+        versionName VERSION_NAME
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles  'proguard-rules.pro'
+        }
+    }
+
+    //对图片的检查不要那么严厉
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    buildToolsVersion '25.0.0'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:support-v4:24.0.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:design:24.0.0'
+    compile 'com.android.support:cardview-v7:24.0.0'
+    //butterknife
+    compile 'com.jakewharton:butterknife:8.2.1'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+    //gson
+    compile 'com.google.code.gson:gson:2.7'
+    //materialprogressbar
+    compile 'me.zhanghai.android.materialprogressbar:library:1.1.7'
+    //glide integration lib for okhttp
+    compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    compile 'com.github.chrisbanes:PhotoView:1.3.0'
+
+    compile 'com.github.li-xiaojun:AlipayUtil:1.0.0'
+    compile 'com.github.li-xiaojun:OkHttpEngine:1.2'
+    compile 'com.github.li-xiaojun:RippleLayout:1.0.0'
+    compile project(':PhotoPicker')
+    compile project(':xrecyclerview')
+}

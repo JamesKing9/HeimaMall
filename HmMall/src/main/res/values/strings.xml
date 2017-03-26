@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">黑马商城</string>
+    <string name="home">首页</string>
+    <string name="cart">购物车</string>
+    <string name="me">我</string>
+    <string name="net_error">重新加载</string>
+    <string name="nodata">暂无数据</string>
+    <string name="select_all">全选</string>
+    <string name="total_price">总价：</string>
+    <string name="go_pay">去结算</string>
+    <string name="reduce" >优惠：</string>
+    <string name="show_order">查看订单</string>
+    <string name="manager_address">管理收货地址</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="check_update">检查更新</string>
+    <string name="about_heimamall">关于黑马商城</string>
+    <string name="logout">退出登录</string>
+    <string name="et_digits">0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM</string>
+
+</resources>

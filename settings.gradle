@@ -1,0 +1,6 @@
+include ':recyclerview控件实现瀑布流', ':jni'
+//include ':heimashop'
+include 'HmMall', ':PhotoPicker', ':xrecyclerview'
+//, 'app'
+//,'imagepickerModule'
+//include ':alipayutil'

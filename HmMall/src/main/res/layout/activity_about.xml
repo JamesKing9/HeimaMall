@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_titlebar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="100dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:text="黑马商城"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:gravity="bottom"
+            android:paddingBottom="50dp"
+            android:text="当前版本 Andorid 1.0.0"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

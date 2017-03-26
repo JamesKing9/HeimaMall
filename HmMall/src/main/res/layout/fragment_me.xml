@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/me_item_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="25dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="25dp">
+
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="@dimen/me_avatar_size"
+                    android:layout_height="@dimen/me_avatar_size"
+                    android:src="@mipmap/avatar_default" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/me_item_arrow"
+                    android:textColor="@color/primary_text"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <!--查看订单-->
+            <TextView
+                android:id="@+id/tv_show_order"
+                style="@style/MeItem"
+                android:text="@string/show_order" />
+
+            <TextView
+                android:id="@+id/tv_manager_address"
+                style="@style/MeItem"
+                android:text="@string/manager_address" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_clear_cache"
+                style="@style/MeItem"
+                android:text="@string/clear_cache" />
+
+            <TextView
+                android:id="@+id/tv_check_update"
+                style="@style/MeItem"
+                android:text="@string/check_update" />
+
+            <TextView
+                android:id="@+id/tv_about_mall"
+                style="@style/MeItem"
+                android:text="@string/about_heimamall" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="@drawable/btn_bg_selector"
+                android:text="@string/logout"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="goods_category">
+        <item>潮流女装</item>
+        <item>品牌男装</item>
+        <item>母婴童装</item>
+        <item>手机数码</item>
+        <item>图书音像</item>
+    </string-array>
+    <string-array name="order_state">
+        <item>待付款</item>
+        <item>待发货</item>
+        <item>待收货</item>
+    </string-array>
+</resources>
